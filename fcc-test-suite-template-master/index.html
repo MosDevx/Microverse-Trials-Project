@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<div class="container">
+
+    <h1 id="title">Mall Survey Form</h1>
+    <p id="description">Please Fill Out The Form to Help Us Serve You Better </p>
+
+
+    <form id="survey-form" action="submit">
+        <label for="name" id="name-label">Name<abbr title="Name Required"><sup>*</sup></abbr> </label>
+        <input type="text" id="name" placeholder="Name" required />
+
+        <label for="email" id="email-label">Email<abbr title="Email Required"><sup>*</sup></abbr></label>
+        <input type="email" id="email" placeholder="Email" required />
+
+        <label for="number" id="number-label">Age</label>
+        <input type="number" id="number" min="1" max="90" placeholder="Age" />
+
+        <p>Preferred Mode of Transport:</p>
+        <select name="select" id="dropdown">
+            <option value="">Biking</option>
+            <option value="">Car</option>
+        </select>
+
+
+        <p>Are you satisfied with our services?</p>
+        <input type="radio" id="radio-btn-1" name="radio-btn" value="Yes">
+        <label for="radio-btn-1">Yes</label>
+
+        <input type="radio" id="radio-btn-2" name="radio-btn" value="No">
+        <label for="radio-btn-2">No</label>
+
+        <p>What new stores would you like the mall to have?</p>
+
+        <div class="checkbox-main-container">
+            <div class="checkbox-container">
+
+                <div>
+                    <input type="checkbox" id="gaming-checkbox" value="Gaming Store">
+                    <label for="gaming-checkbox">Gaming Store</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="food-checkbox" value="Food Court">
+                    <label for="food-checkbox">Food Court</label>
+                </div>
+
+            </div>
+
+            <div class="checkbox-container">
+
+                <div>
+                    <input type="checkbox" id="banking-checkbox" value="Banking Services">
+                    <label for="banking-checkbox">Banking Services</label>
+                </div>
+
+
+                <div>
+                    <input type="checkbox" id="sporting-checkbox" value="Sporting Goods">
+                    <label for="sporting-checkbox">Sporting Goods</label>
+                </div>
+
+            </div>
+        </div>
+
+
+        <p> Please write any additional comments: </p>
+        <textarea name="comment" id="textarea" cols="30" rows="10">
+          </textarea>
+
+        <input type="submit" id="submit" value="Submit" />
+
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="js/index.js"></script>
+</div>
+
+</body>
+
+</html>
